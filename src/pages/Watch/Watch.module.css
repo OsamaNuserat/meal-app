@@ -1,0 +1,14 @@
+.works {
+    color : var(--red);
+    position: relative;
+}
+.works::after {
+    content: '';
+    position: absolute;
+    background-image: url('/public/images/line-red.png');
+    display: block;
+    width: 100%;
+    height: 94%;
+    top: 26px;
+    left: -50px;
+}
