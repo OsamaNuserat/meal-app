@@ -2,14 +2,20 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import client from "../../services/api";
 const navigation = [
  
   { name: "About", href: "/about" }
 ];
-
 const Header = () => {
+  const navigate = useNavigate();
+  const logout = () => { 
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+    localStorage.removeItem("refreshtoken");
+    navigate("/auth/sign-in");
+  }
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [cartLength, setCartLength] = useState(0);
   const user = JSON.parse(localStorage.getItem("user"));
@@ -101,6 +107,7 @@ const Header = () => {
                   />
                 </svg>
               </Link>
+              <button type="button" onClick={logout}>Logout</button>
               <span>Welcome {user.userName}</span>
             </div>
           ) : (

@@ -8,7 +8,7 @@ const Products = ({ data }) => {
     <div className="mx-auto  py-24 px-24">
       <div className="mx-auto max-w-4xl lg:text-center mb-16">
         <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Trending Products
+          Trending Meals
         </p>
         <p className="mt-6 text-lg leading-8 text-gray-900">
           Our app is designed to make your life easier. With a wide range of

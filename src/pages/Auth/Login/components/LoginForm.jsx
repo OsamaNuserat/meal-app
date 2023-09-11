@@ -46,8 +46,11 @@ const LoginForm = ({ onSubmit }) => {
       >
         Submit
       </button>
-      <div className="forget mt-3">
+      <div className="forget mt-3 ">
         <Link to={'/forgot'}>Forget your password?</Link>
+      </div>
+      <div className="forget mt-3 ">
+        <Link to={'/auth/sign-up'}>Dont have an account?</Link>
       </div>
     </form>
   );

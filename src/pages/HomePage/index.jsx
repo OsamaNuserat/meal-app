@@ -25,7 +25,7 @@ const HomePage = () => {
       <div className="container">
         <div className="text-center mb-24 max-w-5xl mx-auto h-[60vh] flex justify-center flex-col">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Satisfy cravings swiftly with Talabat.
+            Satisfy cravings swiftly with EatMore.
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Delight in the convenience of a world-class culinary experience
