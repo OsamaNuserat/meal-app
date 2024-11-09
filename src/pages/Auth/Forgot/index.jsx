@@ -17,7 +17,7 @@ const Forgot = () => {
       alert("Please enter your email");
     }
     const result = await axios.patch(
-      "https://fair-gold-spider-robe.cyclic.app/auth/sendcode",
+      "https://mealappbackend.onrender.com/auth/sendcode",
       { email: email }
     );
 
